@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="quiz.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="btn_start">
+        <button class="btn btn-warning btn-lg">Start Quiz</button>
+    </div>
+
+    <div class="card quiz_box">
+        <header class="card-header">
+            <div class="title"> Batuhan Salkım Soru Uyguluması</div>
+            <div class="timer">
+                <div class="time_text">Kalan Süre </div> 
+                <div class="time_second"> 15</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+
+        <section class="card-body">
+            <div class="question_text">
+                <!-- <span>Hangisi  Amerikan Markasıdır ?</span> -->
+            </div>
+            <div class="option_list">
+                <!-- <div class="option">
+                    <span>a: Hyundai</span>
+                    <div class="icon"><i class="fas fa-check"></i></div>
+                </div>
+                <div class="option">
+                    <span>b: Intel</span>
+                    <div class="icon"><i class="fas fa-times"></i></div>
+                </div>
+                <div class="option correct">
+                    <span>c: Amazon</span>
+                    <div class="icon"><i class="fas fa-times"></i></div>
+                </div>
+                <div class="option incorrect">
+                    <span>d: AliBaba</span>
+                    <div class="icon"><i class="fas fa-times"></i></div>
+                </div> -->
+            </div>
+        </section>
+        <footer class="card-footer">
+            <div class="question_index">
+                <!-- <span class="badge bg-warning">1 / 4 </span> -->
+            </div>
+            <button class="next_btn btn btn-primary btn-sm">Sonraki Soru</button>
+        </footer>
+    </div>
+    <div class="card score_box">
+        <div class="icon"><i class="fas fa-crown"></i></div>
+        <div class="score_text"> </div>
+        <div class="buttons">
+            <button class="btn btn-primary btn_replay">Tekrar Başlat</button>
+            <button class="btn btn-primary btn_quit">Testi Bitir</button>
+        </div>
+    </div>
+    
+    <script src="quizSoru.js"></script>
+    <script src="quizQuiz.js"></script>
+    <script src="ui.js"></script>
+    <script src="quiz.js"></script>
+    
+    
+</html>
