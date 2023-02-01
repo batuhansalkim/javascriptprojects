@@ -59,7 +59,7 @@ Global Styles
 ===============
 */
 
-*,
+/* *,
 ::after,
 ::before {
   margin: 0;
@@ -127,11 +127,11 @@ p {
   h4 {
     line-height: 1;
   }
-}
+} */
 /*  global classes */
 
 /* section */
-.section {
+/* .section {
   padding: 5rem 0;
 }
 
@@ -149,14 +149,14 @@ main {
   min-height: 100vh;
   display: grid;
   place-items: center;
-}
+} */
 
 /*
 =============== 
 Reviews
 ===============
 */
-main {
+/* main {
   min-height: 100vh;
   display: grid;
   place-items: center;
@@ -219,4 +219,88 @@ main {
   transform: translateY(25%);
   background: var(--clr-primary-5);
   color: var(--clr-white);
-}
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

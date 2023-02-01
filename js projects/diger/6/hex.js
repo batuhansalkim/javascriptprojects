@@ -1,4 +1,4 @@
-var arabalar = [
+var models = [
     {
         name : "Bmw 418d",
         image : "img/bmw.jpg",
@@ -21,42 +21,49 @@ var arabalar = [
     },
 
 ]
+var index =2;
 
-var index = 2;
-var slaytCount = arabalar.length;
+document.querySelector(".card-title").textContent = models[index].name;
 
+document.querySelector(".card-img-top").setAttribute('src',models[index].image)
 
-showSlide(index);
-document.querySelector(".fa-arrow-circle-left").addEventListener("click",function(){
-    index--;
-    showSlide(index);
-    console.log(index);
-})
+document.querySelector(".card-link").setAttribute("href",models[index].link);
 
-document.querySelector(".fa-arrow-circle-right").addEventListener("click",function(){
-    index++;
-    showSlide(index);
-    console.log(index);
-})
-
-function showSlide(index){
+// var index = 2;
+// var slaytCount = arabalar.length;
 
 
-    if(index<0){
-        index = slaytCount -1;
-    }
-    else if(index > slaytCount){
-        index = 0;
-    }
+// showSlide(index);
+// document.querySelector(".fa-arrow-circle-left").addEventListener("click",function(){
+//     index--;
+//     showSlide(index);
+//     console.log(index);
+// })
+
+// document.querySelector(".fa-arrow-circle-right").addEventListener("click",function(){
+//     index++;
+//     showSlide(index);
+//     console.log(index);
+// })
+
+// function showSlide(index){
+
+
+//     if(index<0){
+//         index = slaytCount -1;
+//     }
+//     else if(index > slaytCount){
+//         index = 0;
+//     }
     
 
 
-    document.querySelector(".card-title").textContent = arabalar[index].name;
+//     document.querySelector(".card-title").textContent = arabalar[index].name;
 
-    document.querySelector(".card-img-top").setAttribute("src",arabalar[index].image);
+//     document.querySelector(".card-img-top").setAttribute("src",arabalar[index].image);
 
-    document.querySelector(".card-link").setAttribute("href",arabalar[index].link);
-}
+//     document.querySelector(".card-link").setAttribute("href",arabalar[index].link);
+// }
 
 
 
