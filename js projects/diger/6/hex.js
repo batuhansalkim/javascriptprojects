@@ -38,8 +38,8 @@ document.querySelector(".fa-arrow-circle-right").addEventListener("click",functi
     
 });
 
-function showSlide(){
-
+function showSlide(i){
+    index = i;
     if(i<0){
         index = slaytCount -1;
     }
