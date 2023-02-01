@@ -21,13 +21,42 @@ var models = [
     },
 
 ]
-var index =2;
+var index =0;
+var slaytCount = models.length;
 
-document.querySelector(".card-title").textContent = models[index].name;
+showSlide(index);
 
-document.querySelector(".card-img-top").setAttribute('src',models[index].image)
+document.querySelector(".fa-arrow-circle-left").addEventListener("click",function(){
+    index--;
+    showSlide(index);
+    
+});
 
-document.querySelector(".card-link").setAttribute("href",models[index].link);
+document.querySelector(".fa-arrow-circle-right").addEventListener("click",function(){
+    index++;
+    showSlide(index);
+    
+});
+
+function showSlide(){
+
+    if(i<0){
+        index = slaytCount -1;
+    }
+    if(i >= slaytCount){
+        index = 0;
+    }
+
+   document.querySelector(".card-title").textContent = models[index].name;
+
+    document.querySelector(".card-img-top").setAttribute('src',models[index].image)
+
+    document.querySelector(".card-link").setAttribute("href",models[index].link); 
+}
+
+
+
+
 
 // var index = 2;
 // var slaytCount = arabalar.length;
