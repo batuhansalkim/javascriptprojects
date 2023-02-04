@@ -8,21 +8,43 @@
 </head>
 <body>
     <script>
-        const sorting = (arr) =>{
-            let count = 0;
-            for(let i=0; i<arr.length;i++){
-                if(arr[i] === 0){
-                    count++;
+
+        const products = [
+            {
+                id:1,
+                category:"electronics",
+                type:"Mobile",
+                name:"ıphone",
+                price:50000,
+            },
+            {
+                id:2,
+                category:"electronics",
+                type:"tv",
+                name:"lg",
+                price:20000,
+            },
+            {
+                id:3,
+                category:"electronics",
+                type:"Mobile",
+                name:"samsung",
+                price:40000,
+            },
+        ];
+
+        const doublethePrice = (arr) =>{
+            return arr.map((item)=>{
+                if(item.type === "Mobile"){
+                    return{
+                        price:item.price * 2
+                    }
                 }
-            }
-            for(let i=0; i<count; i++){
-                arr[i]=0;
-            }
-            for(let i=count; i<arr.length;i++){
-                arr[i]=1;
-            }
+                return item;
+            })
         }
-        console.log(sorting([1,0,0,0,1,0]))
+
+        console.log(doublethePrice(products));
     </script>
 </body>
 </html>
