@@ -1,0 +1,15 @@
+{
+  "name": "ders2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "hex.js",
+  "scripts": {
+    "start": "nodemon hex.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
