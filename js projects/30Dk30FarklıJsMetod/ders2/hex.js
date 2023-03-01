@@ -69,9 +69,19 @@
 }
 //SORU 5
 {
+    // n = 434 => 4*3*4=>48, 4+3+4=11 result=> 48-11=37;
+
+    // const solution = (num)=>{
+    //     let revizeNum = num.toString().split("").map(Number);
+    //     return revizeNum.reduce((a,b)=> a*b,1) - revizeNum.reduce((a,b)=> a+b,0);
+    // }
+    // console.log(solution(434))
+
+}
+//SORU 6
+{
     
 }
-
 
 
 
