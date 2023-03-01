@@ -2,8 +2,6 @@
 { 
 //SORU 1
 //[8,4,6,2,3,] => output => [4,2,4,2,3] --> birbirinden cıkararak ilerleme metotları
-
-
 // const solution = (arr)=>{
 //     return arr.map((_,i)=>{
 //         for(let j = i+1; j<arr.length;j++){
@@ -38,6 +36,7 @@
     // }
     // console.log(solution([[4, 3, 2, -1], [3, -2, -1, 6], [5, -4, 0, -1]]))
 
+    
 }
 //SORU 3
 {
@@ -78,10 +77,12 @@
     // console.log(solution(434))
 
 }
+
 //SORU 6
 {
     
 }
+    
 
 
 
