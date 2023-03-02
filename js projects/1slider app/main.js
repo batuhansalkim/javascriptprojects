@@ -25,30 +25,47 @@ var models = [
         link: 'https://www.google.com/search?q=goole&oq=goole&aqs=chrome..69i57j46i10i131i199i433i465j0i10i131i433l3j0i10i433j0i10i131i433l3j69i59.5297j0j7&sourceid=chrome&ie=UTF-8'
     },
 ]
-
+var slaytCount = models.length;
 var index = 0;
-
-document.querySelector(".fa-arrow-circle-left").addEventListener("click",function(){
+showSlide(index);
+document.querySelector(".fa-arrow-circle-right").addEventListener("click",function(){
     index++;
-    if(index>models.length){
-        alert("fazla deger giriliyor...")
-    }
+   showSlide(index);
+   
     console.log(index);
 });
 
 
-document.querySelector(".fa-arrow-circle-right").addEventListener("click",function(){
-
+document.querySelector(".fa-arrow-circle-left").addEventListener("click",function(){
+    index--;
+    showSlide(index);
+    console.log(index);
 });
 
+function showSlide(i){
+
+    index = i;
+
+    if(i<0){
+        index = models.length -1 ;
+    }
+
+    if (i >= models.length) {
+        index = 0
+    }
+
+    document.querySelector(".card-title").textContent = models[index].name;
+
+    document.querySelector(".card-img-top").setAttribute("src",models[index].image);
+
+    document.querySelector(".card-link").setAttribute("href",models[index].link);
+}
+
+    
 
 
 
-document.querySelector(".card-title").textContent = models[index].name;
 
-document.querySelector(".card-img-top").setAttribute("src",models[index].image);
-
-document.querySelector(".card-link").setAttribute("href",models[index].link);
 
 // var index = 0;
 // var resimSayisi = models.length;
