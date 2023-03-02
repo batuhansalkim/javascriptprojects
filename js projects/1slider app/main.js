@@ -26,73 +26,45 @@ var models = [
     },
 ]
 
+var index = 1;
+
+document.querySelector(".card-title").textContent = models[index].name;
+
+document.querySelector(".card-img-top").setAttribute("src",models[index].image);
+
+
 
 // var index = 0;
-// var görselSayisi = models.length;
-
-// console.log(görselSayisi);
+// var resimSayisi = models.length;
 // SlideGöster(index);
 
 // document.querySelector(".fa-arrow-circle-left").addEventListener("click",function(){
 //     index--;
+//     console.log(index);
 //     SlideGöster(index);
-// });
-
+// })
 // document.querySelector(".fa-arrow-circle-right").addEventListener("click",function(){
 //     index++;
-   
-//     SlideGöster(index);
 //     console.log(index);
-// });
+//     SlideGöster(index);
+// })
 
-// function SlideGöster(i){
-
+//  function SlideGöster(i){
 //     index = i;
+
 //     if(i<0){
-//         index = görselSayisi-1;
+//         index=resimSayisi-1;
 //     }
-//     if(i>=görselSayisi){
+//     if(i>=resimSayisi){
 //         index=0;
 //     }
 
-//     document.querySelector(".card-title").textContent = models[index].name;
+//     document.querySelector(".card-title").textContent=models[index].name;
 
 //     document.querySelector(".card-img-top").setAttribute("src",models[index].image);
 
-//     document.querySelector(".card-link").setAttribute("href",models[index].link);
-// }
-
-var index = 0;
-var resimSayisi = models.length;
-SlideGöster(index);
-
-document.querySelector(".fa-arrow-circle-left").addEventListener("click",function(){
-    index--;
-    console.log(index);
-    SlideGöster(index);
-})
-document.querySelector(".fa-arrow-circle-right").addEventListener("click",function(){
-    index++;
-    console.log(index);
-    SlideGöster(index);
-})
-
- function SlideGöster(i){
-    index = i;
-
-    if(i<0){
-        index=resimSayisi-1;
-    }
-    if(i>=resimSayisi){
-        index=0;
-    }
-
-    document.querySelector(".card-title").textContent=models[index].name;
-
-    document.querySelector(".card-img-top").setAttribute("src",models[index].image);
-
-    document.querySelector(".card-link").setAttribute("src",models[index].link);
- }   
+//     document.querySelector(".card-link").setAttribute("src",models[index].link);
+//  }   
 
 
 
