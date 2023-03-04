@@ -7,9 +7,7 @@
   font-family: "Lunacy";
   src: url("Assets/Fonts/Lunacy.woff") format("woff"), url("Assets/Fonts/Lunacy.woff2") format("woff2")
 }
-/* body{
-    background-color: red;
-} */
+
 *{
     box-sizing: border-box;
 }
@@ -18,8 +16,9 @@ html{
     cursor: url("Assets/Cursors/Ghost.cur"), auto;;
 }
 
-
-
+body{
+  
+}
 
 
 
