@@ -50,7 +50,51 @@ html{
   background-color: black;
   height: 175px;
   width: 125px;
+  position: relative;
 }
+.card-face{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cob-web{
+  position: absolute;
+  width: 47px;
+  height: 47px;
+}
+.cob-web-top-left{
+  transform: rotate(270deg);
+  top:0;
+  left: 0;
+}
+
+.cob-web-top-right{
+  top: 0;
+  right: 0;
+}
+
+.cob-web-bottom-left{
+  transform: rotate(180deg);
+  bottom: 0;
+  left: 0;
+}
+.cob-web-bottom-right{
+  transform: rotate(90deg);
+  bottom: 0;
+  right: 0;
+}
+.spider{
+  align-self: flex-start;
+}
+
+
+
+
+
+
 
 
 
