@@ -11,18 +11,46 @@
 *{
     box-sizing: border-box;
 }
-html{
-    min-height: 100vh;
-    cursor: url("Assets/Cursors/Ghost.cur"), auto;;
-}
-
 body{
-  
+  margin: 0;
+  background: radial-gradient(#9D5900, #3D2200);
 }
 
+html{
+  min-height: 100vh;
+  cursor: url("Assets/Cursors/Ghost.cur"), auto;;
+}
 
+.page-title{
+  color: #FF6D00;
+  font-family: Creepy, serif;
+  font-weight: normal;
+  text-align: center;
+  font-size: 6em;
+}
+.game-info-container{
+  grid-column: 1/-1;
+  display: flex;
+  justify-content: space-between;
+}
+.game-info{
+  font-family: Lunacy,serif;
+  color: #FFBB89;
+  font-size: 4em;
+}
+.game-container{
+  display: grid;
+  grid-template-columns: repeat(4,auto);
+  grid-gap: 10px;
+  margin: 50px;
+  justify-content: center;
 
-
+}
+.card{
+  background-color: black;
+  height: 175px;
+  width: 125px;
+}
 
 
 
